@@ -3,6 +3,7 @@
 
 function handleThumbnailClicks() {
   $('.thumbnail').click(function (event) {
+    event.preventDefault();
     const imgSrc = $(event.currentTarget).find('img').attr('src');
     const imgAlt = $(event.currentTarget).find('img').attr('alt');
 
