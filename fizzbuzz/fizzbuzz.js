@@ -13,13 +13,13 @@ function playGame() {
     // 2. append correct format to js-results div
     for (let counter = 0; counter <= choosenNumber; counter++){
       if (counter % 3 === 0 && counter % 5 === 0) {
-        $('.js-results').append('<div><span>Fizzbuzz</span></div>').css('fizz-buzz-item fizzbuzz');
+        $('.js-results').append('<div class="fizz-buzz-item fizzbuzz"><span>Fizzbuzz</span></div>');
       } else if (counter % 5 === 0) {
-        $('.js-results').append('<div><span>Fizz</span></div>').css('fizz-buzz-item fizz');
+        $('.js-results').append('<div class="fizz-buzz-item fizz"><span>Fizz</span></div>');
       } else if(counter % 3 === 0) {
-        $('.js-results').append('<div><span>Buzz</span></div>').css('fizz-buzz-item buzz');
+        $('.js-results').append('<div class="fizz-buzz-item buzz"><span>Buzz</span></div>');
       } else {
-        $('.js-results').append(`<div><span>${counter}</span></div>`).css('fizz-buzz-item');
+        $('.js-results').append(`<div class="fizz-buzz-item"><span>${counter}</span></div>`).css('fizz-buzz-item');
       }
     }
   });
